@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import NumberSelector from './NumberSelector';
 import HPResult from './HPResult';
+import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-196007966-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
   constructor(props) {
