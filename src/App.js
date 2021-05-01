@@ -150,11 +150,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>토벌전 체력 계산기</h2>
+        <h2>쿠키런 킹덤 토벌전 체력 계산기</h2>
         <h3>토벌전 단계</h3>
         <NumberSelector
           min="1"
-          max="50"
+          max="60"
           tabIndex="1"
           id="input-level"
           autoFocus={true}
