@@ -4,7 +4,7 @@ class HPResult extends Component {
     render() {
       return (
           <div>
-            <h2>{this.props.min.toLocaleString()} ~ {this.props.max.toLocaleString()}</h2>
+            <div class="calc_result">{this.props.min.toLocaleString()} ~ {this.props.max.toLocaleString()}</div>
           </div>
       );
     }

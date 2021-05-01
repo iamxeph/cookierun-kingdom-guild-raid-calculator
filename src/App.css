@@ -1,10 +1,39 @@
 body {
-    width:auto;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: black;
+    color: white;
     text-align: center;
 }
-input {
-    width: 10%;
+.calc_input_desc {
+    font-weight: bold;
+    font-size: larger;
+}
+.calc_result {
+    padding-top: 1%;
+    font-weight: bold;
+    font-size:xx-large;
+}
+.drawing_desc {
+    color: gray;
+    font-size: small;
+}
+#calculator {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#drawing {
+    width: 100%;
     text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5%;
+}
+img {
+    max-width: 30%;
+    max-height: 50%;
+}
+input {
+    width: 30%;
+    text-align: center;
+    margin-top: 1%;
 }

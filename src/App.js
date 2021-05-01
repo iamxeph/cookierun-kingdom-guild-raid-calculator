@@ -151,7 +151,12 @@ class App extends Component {
     return (
       <div className="App">
         <h2>쿠키런 킹덤 토벌전 체력 계산기</h2>
-        <h3>토벌전 단계</h3>
+        <div id="drawing">
+          <img src="/calculating_yongcoo.png" ></img>
+          <div class="drawing_desc">"계산하는 용쿠" 아뙈나라 作</div>
+        </div>
+        <div id="calculator">
+        <div class="calc_input_desc">토벌전 단계</div>
         <NumberSelector
           min="1"
           max="60"
@@ -165,7 +170,7 @@ class App extends Component {
         </NumberSelector>
         <br />
         <br />
-        <h3>남은 체력 %</h3>
+        <div class="calc_input_desc">남은 체력 %</div>
         <NumberSelector
           min="1"
           max="100"
@@ -178,12 +183,14 @@ class App extends Component {
         </NumberSelector>
         <br />
         <br />
-        <h3>잔여 체력 범위</h3>
+        <div class="calc_input_desc">잔여 체력 범위</div>
         <HPResult min={this.state.min} max={this.state.max}></HPResult>
         <br />
+        </div>
         제작: [에어프라이어]길드 멍킹<br />
-        문의: iamxeph@gmail.com<br />
-        디자인 도움 환영합니다
+        문의 및 제안: iamxeph@gmail.com<br /><br />
+        디자인 도움 환영합니다.<br />
+        그림 투고 환영합니다.<br /><br />
       </div>
     );
   }
