@@ -152,7 +152,7 @@ class App extends Component {
       <div className="App">
         <h2>쿠키런 킹덤 토벌전 체력 계산기</h2>
         <div id="drawing">
-          <img src="/calculating_yongcoo_small.jpg" alt="image"></img>
+          <img src="/calculating_yongcoo_small.jpg" alt="Calculating Yongcoo"></img>
           <div className="drawing_desc">"계산하는 용쿠" 아뙈나라 作</div>
         </div>
         <div id="calculator">
