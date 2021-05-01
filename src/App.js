@@ -152,11 +152,11 @@ class App extends Component {
       <div className="App">
         <h2>쿠키런 킹덤 토벌전 체력 계산기</h2>
         <div id="drawing">
-          <img src="/calculating_yongcoo.png" ></img>
-          <div class="drawing_desc">"계산하는 용쿠" 아뙈나라 作</div>
+          <img src="/calculating_yongcoo_small.jpg" alt="image"></img>
+          <div className="drawing_desc">"계산하는 용쿠" 아뙈나라 作</div>
         </div>
         <div id="calculator">
-        <div class="calc_input_desc">토벌전 단계</div>
+        <div className="calc_input_desc">토벌전 단계</div>
         <NumberSelector
           min="1"
           max="60"
@@ -170,7 +170,7 @@ class App extends Component {
         </NumberSelector>
         <br />
         <br />
-        <div class="calc_input_desc">남은 체력 %</div>
+        <div className="calc_input_desc">남은 체력 %</div>
         <NumberSelector
           min="1"
           max="100"
@@ -183,7 +183,7 @@ class App extends Component {
         </NumberSelector>
         <br />
         <br />
-        <div class="calc_input_desc">잔여 체력 범위</div>
+        <div className="calc_input_desc">잔여 체력 범위</div>
         <HPResult min={this.state.min} max={this.state.max}></HPResult>
         <br />
         </div>
