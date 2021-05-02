@@ -3,7 +3,7 @@ import './App.css';
 import NumberSelector from './NumberSelector';
 import {HPResultNumOnly, HPResultWithText} from './HPResult';
 import ReactGA from 'react-ga';
-import Notifications, {notify} from 'react-notify-toast';
+import Notifications from 'react-notify-toast';
 
 ReactGA.initialize('UA-196007966-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
