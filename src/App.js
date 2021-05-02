@@ -182,7 +182,7 @@ class App extends Component {
         <br />
         <br />
         <div className="calc_input_desc">잔여 체력 범위</div>
-        <div className="calc_copytoclipboard_desc">클릭하면 복사됩니다</div>
+        <div className="calc_copytoclipboard_desc">결과를 터치하면 복사됩니다</div>
         <HPResultWithText level= {this.state.level} percent={this.state.percent} min={this.state.min} max={this.state.max}></HPResultWithText>
         <HPResultNumOnly min={this.state.min} max={this.state.max}></HPResultNumOnly>
         <br />

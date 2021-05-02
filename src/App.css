@@ -9,7 +9,7 @@ body {
 }
 .calc_copytoclipboard_desc {
     color: gray;
-    font-size: x-small;
+    font-size: small;
 }
 .calc_result_withtext {
     font-weight: bold;
