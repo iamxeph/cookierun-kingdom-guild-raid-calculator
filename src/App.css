@@ -7,13 +7,15 @@ body {
     font-weight: bold;
     font-size: larger;
 }
+.calc_copytoclipboard_desc {
+    color: gray;
+    font-size: x-small;
+}
 .calc_result_withtext {
-    padding-top: 1%;
     font-weight: bold;
     font-size:xx-large;
 }
 .calc_result_numonly {
-    padding-top: 1%;
     font-weight: bold;
     font-size:large;
 }

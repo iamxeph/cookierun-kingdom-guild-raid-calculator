@@ -3,6 +3,7 @@ import './App.css';
 import NumberSelector from './NumberSelector';
 import {HPResultNumOnly, HPResultWithText} from './HPResult';
 import ReactGA from 'react-ga';
+import Notifications, {notify} from 'react-notify-toast';
 
 ReactGA.initialize('UA-196007966-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -150,6 +151,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Notifications />
         <h3>쿠키런 킹덤 토벌전 체력 계산기</h3>
         <div id="calculator">
         <div className="calc_input_desc">토벌전 단계</div>
@@ -180,7 +182,8 @@ class App extends Component {
         <br />
         <br />
         <div className="calc_input_desc">잔여 체력 범위</div>
-        <HPResultWithText min={this.state.min} max={this.state.max}></HPResultWithText>
+        <div className="calc_copytoclipboard_desc">클릭하면 복사됩니다</div>
+        <HPResultWithText level= {this.state.level} percent={this.state.percent} min={this.state.min} max={this.state.max}></HPResultWithText>
         <HPResultNumOnly min={this.state.min} max={this.state.max}></HPResultNumOnly>
         <br />
         </div>
