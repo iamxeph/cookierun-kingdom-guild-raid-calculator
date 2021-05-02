@@ -1,13 +1,39 @@
 import React, { Component } from 'react';
+import {format, convert} from 'uck';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
-class HPResult extends Component {
+export class HPResultNumOnly extends Component {
     render() {
       return (
           <div>
-            <div className="calc_result">{this.props.min.toLocaleString()} ~ {this.props.max.toLocaleString()}</div>
+            <div className="calc_result_numonly">({this.props.min.toLocaleString()} ~ {this.props.max.toLocaleString()})</div>
           </div>
       );
     }
   }
 
-  export default HPResult;
+export class HPResultWithText extends Component {
+  formatNum(num) {
+    if (num < 1000) {
+      return num;
+    }
+    else if (num < 10000) {
+      return format('.' + (num.toString().length - 3) + 'f천')(num);
+    }
+    else if (num < 100000000) {
+      return format('.' + (num.toString().length - 4) + 'f만')(num);
+    } else if (num < 100000000000) {
+      return format('.' + (num.toString().length - 6) + 'f억')(num);
+    } else {
+      return num;
+    }
+  }
+
+  render() {
+    return (
+        <div>
+          <div className="calc_result_withtext">{this.formatNum(this.props.min)} ~{this.formatNum(this.props.max)}</div>
+        </div>
+    );
+  }
+}

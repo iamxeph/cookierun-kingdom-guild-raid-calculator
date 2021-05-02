@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NumberSelector from './NumberSelector';
-import HPResult from './HPResult';
+import {HPResultNumOnly, HPResultWithText} from './HPResult';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-196007966-1');
@@ -180,7 +180,8 @@ class App extends Component {
         <br />
         <br />
         <div className="calc_input_desc">잔여 체력 범위</div>
-        <HPResult min={this.state.min} max={this.state.max}></HPResult>
+        <HPResultWithText min={this.state.min} max={this.state.max}></HPResultWithText>
+        <HPResultNumOnly min={this.state.min} max={this.state.max}></HPResultNumOnly>
         <br />
         </div>
         <div id="drawing">

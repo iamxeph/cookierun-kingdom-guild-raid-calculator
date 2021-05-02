@@ -7,10 +7,15 @@ body {
     font-weight: bold;
     font-size: larger;
 }
-.calc_result {
+.calc_result_withtext {
     padding-top: 1%;
     font-weight: bold;
     font-size:xx-large;
+}
+.calc_result_numonly {
+    padding-top: 1%;
+    font-weight: bold;
+    font-size:large;
 }
 .drawing_desc {
     color: gray;
@@ -18,13 +23,11 @@ body {
 }
 #calculator {
     width: 100%;
-    display: inline-block;
     vertical-align: middle;
 }
 #drawing {
     width: 100%;
     text-align: center;
-    display: inline-block;
     vertical-align: middle;
     padding-bottom: 1%;
 }
