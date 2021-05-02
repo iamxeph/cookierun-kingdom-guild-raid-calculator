@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {format, convert} from 'uck';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {format} from 'uck';
 
 export class HPResultNumOnly extends Component {
     render() {
@@ -13,6 +12,16 @@ export class HPResultNumOnly extends Component {
   }
 
 export class HPResultWithText extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      copyText: "",
+      setText: "",
+      isCopied: false,
+      setIsCopied: false
+    }
+  }
   formatNum(num) {
     if (num < 1000) {
       return num;
@@ -32,7 +41,7 @@ export class HPResultWithText extends Component {
   render() {
     return (
         <div>
-          <div className="calc_result_withtext">{this.formatNum(this.props.min)} ~{this.formatNum(this.props.max)}</div>
+          <div className="calc_result_withtext">{this.formatNum(this.props.min)} ~ {this.formatNum(this.props.max)}</div>
         </div>
     );
   }
