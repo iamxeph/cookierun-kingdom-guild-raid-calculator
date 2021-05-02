@@ -152,7 +152,7 @@ class App extends Component {
     return (
       <div className="App">
         <Notifications />
-        <h3>쿠키런 킹덤 토벌전 체력 계산기</h3>
+        <h2>쿠키런 킹덤 토벌전 체력 계산기</h2>
         <div id="calculator">
         <div className="calc_input_desc">토벌전 단계</div>
         <NumberSelector
