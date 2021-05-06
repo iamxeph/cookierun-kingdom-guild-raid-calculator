@@ -3,6 +3,8 @@ html {
     width: 100%;
 }
 body {
+    height: 100%;
+    width: 100%;
     background-color: black;
     /* background: url(/src/assets/saint_lily_mandoo.png);
     background-repeat:no-repeat;
@@ -45,11 +47,11 @@ body {
 #drawing {
     width: 100%;
     text-align: center;
-    vertical-align: middle;
     margin-bottom: 3%;
 }
 img {
-    max-width: 100%;
+    max-width: 640px;
+    width: 100%;
     max-height: 50%;
 }
 input {
