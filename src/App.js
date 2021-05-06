@@ -187,12 +187,13 @@ class App extends Component {
         <HPResultNumOnly min={this.state.min} max={this.state.max}></HPResultNumOnly>
         <br />
         </div>
-        <div id="drawing">
+        {/* <div id="drawing">
           <img src="/saint_lily_mandoo.webp" alt="Saint lily cookie"></img>
           <div className="drawing_desc">"무제" [월요일좋아]길드 만두먹기장인 作</div>
-        </div>
+        </div> */}
         제작: [에어프라이어]길드 멍킹<br />
         문의 및 제안: iamxeph@gmail.com<br />
+        배경: [월요일좋아]길드 만두먹기장인<br /><br />
         웹퍼블리싱 도움 또는 그림 투고 환영합니다.<br />
       </div>
     );

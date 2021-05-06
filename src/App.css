@@ -3,16 +3,26 @@ html {
     width: 100%;
 }
 body {
-    height: 100%;
-    width: 100%;
     background-color: black;
-    /* background: url(/src/assets/saint_lily_mandoo.png);
+    background: url(/src/assets/saint_lily_mandoo_pc.png);
     background-repeat:no-repeat;
-    background-position-x: 10%;
-    background-position-y: 100%;
-    background-size: cover; */
+    background-position-x: 20%;
+    background-position-y: center;
+    background-size: cover;
     color: white;
     text-align: center;
+}
+@media only screen and (max-width: 767px) {
+    /* styles for narrow screens */
+    body {
+        background-color: black;
+        background: url(/src/assets/saint_lily_mandoo_mobile.png);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        text-align: center;
+    }
 }
 .title_desc {
     font-weight: bold;
