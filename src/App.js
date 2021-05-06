@@ -152,7 +152,7 @@ class App extends Component {
     return (
       <div className="App">
         <Notifications />
-        <h2>쿠키런 킹덤 토벌전 용 체력 계산기</h2>
+        <div className="title_desc">쿠키런 킹덤 토벌전 용 체력 계산기</div>
         <div id="calculator">
         <div className="calc_input_desc">토벌전 단계</div>
         <NumberSelector
@@ -188,13 +188,12 @@ class App extends Component {
         <br />
         </div>
         <div id="drawing">
-          <img src="/calculating_yongcoo_small.webp" alt="Calculating Yongcoo"></img>
-          <div className="drawing_desc">"계산하는 용쿠" 아뙈나라 作</div>
+          <img src="/saint_lily_mandoo.webp" alt="Saint lily cookie"></img>
+          <div className="drawing_desc">"무제" [월요일좋아]길드 만두먹기장인 作</div>
         </div>
         제작: [에어프라이어]길드 멍킹<br />
-        문의 및 제안: iamxeph@gmail.com<br /><br />
-        디자인 도움 환영합니다.<br />
-        그림 투고 환영합니다.<br /><br />
+        문의 및 제안: iamxeph@gmail.com<br />
+        웹퍼블리싱 도움 또는 그림 투고 환영합니다.<br />
       </div>
     );
   }

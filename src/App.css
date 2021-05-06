@@ -1,14 +1,29 @@
+html {
+    height: 100%;
+    width: 100%;
+}
 body {
     background-color: black;
+    /* background: url(/src/assets/saint_lily_mandoo.png);
+    background-repeat:no-repeat;
+    background-position-x: 10%;
+    background-position-y: 100%;
+    background-size: cover; */
     color: white;
     text-align: center;
 }
-.calc_input_desc {
+.title_desc {
     font-weight: bold;
     font-size: larger;
+    margin-bottom: 3%;
+
+}
+.calc_input_desc {
+    font-weight: bold;
+    font-size: large;
 }
 .calc_copytoclipboard_desc {
-    color: gray;
+    color: lightgray;
     font-size: small;
 }
 .calc_result_withtext {
@@ -31,10 +46,10 @@ body {
     width: 100%;
     text-align: center;
     vertical-align: middle;
-    padding-bottom: 1%;
+    margin-bottom: 3%;
 }
 img {
-    max-width: 30%;
+    max-width: 100%;
     max-height: 50%;
 }
 input {
