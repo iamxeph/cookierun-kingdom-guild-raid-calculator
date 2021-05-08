@@ -81,6 +81,8 @@ class App extends Component {
       84328000,
       86876000,
       89502000,
+      92206000,
+      94994000,
       ]
 
       this.inputHPPercentRef = React.createRef();
@@ -157,7 +159,7 @@ class App extends Component {
         <div className="calc_input_desc">토벌전 단계</div>
         <NumberSelector
           min="1"
-          max="60"
+          max="62"
           tabIndex="1"
           id="input-level"
           autoFocus={true}
