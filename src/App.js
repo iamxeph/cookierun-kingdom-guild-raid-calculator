@@ -83,6 +83,10 @@ class App extends Component {
       89502000,
       92206000,
       94994000,
+      97864000,
+      100822000,
+      103870000,
+      107010000
       ]
 
       this.inputHPPercentRef = React.createRef();
